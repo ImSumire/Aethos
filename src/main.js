@@ -58,7 +58,7 @@ document.addEventListener("mousemove", e => {
 /* Search */
 var dialog, input, results;
 
-const data = fetch('http://127.0.0.1:3000/data.json').then(r => r.json());
+const data = fetch('https://raw.githubusercontent.com/ImSumire/Aethos/main/data.json').then(r => r.json());
 
 const limit = 8;
 
