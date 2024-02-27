@@ -1,0 +1,2 @@
+If you want full-Breath-of-the-Wild-style paragliding action in Minecraft, this mod is for you. This mod adds...well, Paraglider, an item in Legend of Zelda: Breath of the Wild. The Paraglider can be crafted by using some leathers and sticks. While you're holding Paraglider midair, you fall more slowly, gliding over the land. Just like Legend of Zelda: Breath of the Wild. This mod also adds BotW-style stamina system !
+https://www.minecraft-guides.com/mod/paragliders/

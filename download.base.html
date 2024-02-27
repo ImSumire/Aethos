@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="system">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="darkreader-lock" />
+
+    <title>Aethos</title>
+    <link rel="stylesheet" href="src/css/all.min.css" />
+    <script type="module" src="src/libs/swup.min.js"></script>
+  </head>
+  <body>
+    <img src="assets/images/background.webp" id="background" />
+    <div id="switch" tooltip="System" onclick="switchTheme()">
+      <img src="assets/icons/System.svg" alt="Switch Theme" />
+    </div>
+    <nav>
+      <h2>- Aethos -</h2>
+      <a href=".">Home</a>
+      <a href="download.html">Download</a>
+      <a href="wiki.html">Wiki</a>
+    </nav>
+    <div id="gradient"></div>
+    <div id="loader"></div>
+
+    <main>
+      <span
+        id="arrow"
+        onclick="window.scrollTo({ top: 560, behavior: 'smooth' })"
+        >^</span
+      >
+      <section id="swup" class="transition-main">
+        <h2>Modpacks</h2>
+        <section id="cards">
+          <div glow="#00ffbf89, var(--trd)">
+            <h2>Light</h2>
+            <p>Optimized for toasters</p>
+            <ul>
+              <li>Huge performance improvement</li>
+              <li>Very fast loading</li>
+              <li>Shaders compatibility</li>
+            </ul>
+          </div>
+          <div glow="#d900ff89, var(--trd)">
+            <h2>Medium</h2>
+            <p>Pretty graphism</p>
+            <ul>
+              <li>Adding particules</li>
+              <li>Falling leaves</li>
+              <li>Eating animation</li>
+              <li>Better skin render</li>
+              <li>Realistic sound physic</li>
+            </ul>
+          </div>
+          <div glow="#ff005d89, var(--trd)">
+            <h2>Ultra</h2>
+            <p>Extremly detailed world</p>
+            <ul>
+              <li>Water/Lava splashes</li>
+              <li>Player movement animations</li>
+              <li>Funny physic (items, block breaking, smoke)</li>
+            </ul>
+          </div>
+        </section>
+
+        <h2>Installation Guide</h2>
+        Download Forge Installer
+        <ul>
+          <li>Visit the <a href="https://files.minecraftforge.net/net/minecraftforge/forge/">official Forge website</a>.</li>
+          <li>Select the 1.19.2 version (<a href="https://files.minecraftforge.net/net/minecraftforge/forge/index_1.19.2.html">shortcut</a>)</li>
+          <li>Download the latest or recommended</li>
+        </ul><br>
+
+        Run Forge Installer
+        <ul>
+          <li>Once the installer is downloaded, locate the file in your downloads folder or wherever you saved it.</li>
+          <li>Double-click the installer file to launch it. <i>If you are on Linux : `chmod +x forge-1.19.2-43.3.8-installer.jar`</i></li>
+          <li>Select "Install client" and then click "OK". Forge will begin installing.</li>
+        </ul><br>
+
+        Launch Minecraft with Forge
+        <ul>
+          <li>Open the Minecraft Launcher.</li>
+          <li>In the bottom-left corner, click on the drop-down menu next to the "Play" button.</li>
+          <li>Select "Forge" from the list of available installations.</li>
+          <li>Click the "Play" button to launch Minecraft with Forge.</li>
+        </ul><br>
+
+        Verify Forge Installation
+        <ul>
+          <li>Once Minecraft has launched, check the bottom-left corner of the main menu screen.</li>
+          <li>You should see the Forge version displayed, confirming that Forge has been successfully installed.</li>
+        </ul><br>
+
+        Install Mods
+        <ul>
+          <li>Download the modpack you want to install in regards to your computer's power.</li>
+          <li>Windows : Press WINDOWS + R simultaneously and type %appdata% in the window and open the .minecraft directory.</li>
+          <li>Linux : Open your Home directory, press CTRL + H and open the .minecraft directory.</li>
+          <li>In your Minecraft directory, you should see a folder named "mods." If it doesn't exist, create one.</li>
+          <li>Drag and drop the modpack into the "mods" folder and extract the zip.</li>
+          <li>Close the Minecraft Launcher if it's open, then relaunch Minecraft with Forge.</li>
+        </ul><br>
+        It's done!
+
+        <h2>Mods</h2>
+        <ul>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/aether" target="_blank">Aether</a> <i>(New dimension)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/alexs-mobs" target="_blank">Alex's Mobs</a> <i>(New animals & monsters)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/apocalyptic-fortress" target="_blank">Apocalyptic Fortress</a> <i>(Better Nether Fortress)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/backpacked" target="_blank">Backpacked</a> <i>(Add backpacks)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/blue-skies" target="_blank">Blue Skies</a> <i>(New dimension)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/create" target="_blank">Create</a> <i>(Automation)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/creatures-and-beasts" target="_blank">Creatures and Beasts</a> <i>(New animals & monsters)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/delightful" target="_blank">Delightful</a> <i>(New cooking recipes)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/enlightend" target="_blank">Enlightend</a> <i>(New biomes & blocks in the End)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/farmers-delight" target="_blank">Farmer's Delight</a> <i>(New cooking recipes & crops)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/ferdinands-flowers" target="_blank">Ferdinand's Flowers</a> <i>(New flowers)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/galosphere" target="_blank">Galosphere</a> <i>(New cave biomes & ores)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/handcrafted" target="_blank">Handcrafted</a> <i>(New decorative furniture)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go" target="_blank">Oh The Biomes You'll Go</a> <i>(New world generation)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/paragliders" target="_blank">Paragliders</a> <i>(Add some paragliders)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/storage-drawers" target="_blank">Storage Drawers</a> <i>(New storage blocks)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest" target="_blank">The Twilight Forest</a> <i>(New dimension)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/towns-and-towers" target="_blank">Towns and Towers</a> <i>(New villages & structures)</i></li>
+          <!-- prettier-ignore -->
+          <li><a href="https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise" target="_blank">When Dungeons Arise</a> <i>(New structures & dungeons)</i></li>
+        </ul>
+        <h2>Why 3 modpacks ?</h2>
+        Creating light, medium, and extreme modpacks for your Minecraft modpack
+        is crucial for catering to a diverse player base with varying
+        preferences and capabilities. The light modpack offers a streamlined
+        experience suitable for players with lower-end hardware or those seeking
+        a vanilla-like gameplay with minor enhancements. On the other hand, the
+        medium modpack strikes a balance between performance and content,
+        providing a more immersive experience with a broader range of mods for
+        players with moderate hardware capabilities. Lastly, the extreme modpack
+        caters to enthusiasts and players with high-end machines, delivering a
+        comprehensive and challenging gameplay experience with an extensive
+        selection of mods, pushing the boundaries of what Minecraft can offer.
+        Offering these three tiers ensures inclusivity, allowing players of all
+        preferences and hardware capabilities to enjoy your modpack to its
+        fullest potential.
+      </section>
+    </main>
+  </body>
+  <script src="src/main.min.js"></script>
+</html>

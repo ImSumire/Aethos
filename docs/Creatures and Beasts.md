@@ -1,0 +1,2 @@
+Creatures and Beasts is a fantasy creature mod which fills each biome with new mobs, from the plains of the overworld to the void of the end!
+https://www.curseforge.com/minecraft/mc-mods/creatures-and-beasts

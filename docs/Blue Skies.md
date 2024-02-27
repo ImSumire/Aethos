@@ -1,0 +1,2 @@
+Blue Skies adds two dimensions called the Everbright and the Everdawn. It includes lots of new unique features, blocks, weapons, mobs and even massive dungeons! Each dimension has its own theme, with the Everbright being very bright, snowy and cold while the Everdawn is typically darker and warm. Each of these dimensions currently has two dungeons to explore, totaling up to 4 dungeons, with more planned on the way!
+https://blue-skies.fandom.com/wiki/Blue_Skies_Wiki

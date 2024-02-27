@@ -1,0 +1,2 @@
+Backpacked is not just another backpack mod. Besides what you would expect to be added into the mod, Backpacked provides fun gameplay experiences with advancements like challenges. Completing challenges contributes to the customisation of backpacks; a new system that allows players to personalise their backpack with different models.
+https://www.minecraft-guides.com/mod/backpacked/

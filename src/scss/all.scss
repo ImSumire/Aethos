@@ -1,0 +1,267 @@
+@import 'anim';
+@import 'wiki';
+
+$theme-transition: 1s;
+
+// Themes
+@mixin dark() {
+    --bg: #151314;
+    --fg: #e6e0e5;
+    --sec: #222;
+    --trd: #303030;
+    --inv: invert(100%);
+}
+
+@mixin light() {
+    --bg: #eceaeb;
+    --fg: #1f191e;
+    --sec: #d3d3d3;
+    --trd: #ffffff46;
+    --inv: invert(0%);
+}
+
+.dark {
+    @include dark;
+}
+
+.light {
+    @include light;
+}
+
+.system {
+    @media (prefers-color-scheme: dark) {
+        @include dark;
+    }
+
+    @media (prefers-color-scheme: light) {
+        @include light;
+    }
+}
+
+// Basics
+@font-face {
+    font-family: pixel;
+    src: url('../../assets/fonts/8-bit.woff2') format('woff2');
+}
+
+@keyframes enter {
+    from {
+        opacity: 0;
+        margin-top: 20px;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    color: var(--fg);
+    overflow-x: hidden;
+    background: var(--bg);
+    font-family: sans-serif;
+    transition: background $theme-transition, color $theme-transition;
+}
+
+a {
+    color: var(--fg);
+    text-decoration: none;
+    background: linear-gradient(to right, var(--fg), var(--fg));
+    background-size: 0 0.1em;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: color $theme-transition, background-size 400ms;
+
+    &:hover {
+        background-size: 100% 0.1em;
+    }
+}
+
+ul {
+    list-style: none;
+    transform: translateX(-4ch);
+}
+
+h2,
+#arrow,
+nav a {
+    font-family: pixel, sans-serif;
+}
+
+#background {
+    z-index: -1;
+    position: fixed;
+    min-width: 100%;
+    min-height: 900px;
+    transform: translate(calc(-50% + 50vw), 0);
+}
+
+#switch {
+    top: 2rem;
+    z-index: 99;
+    right: 2rem;
+    cursor: pointer;
+    position: fixed;
+    user-select: none;
+    animation: enter 1s ease-in;
+
+    img {
+        width: 1.25rem;
+        height: 1.25rem;
+        filter: opacity(0.75) var(--inv);
+        transition: filter $theme-transition;
+    }
+}
+
+nav {
+    left: 50%;
+    z-index: 2;
+    top: 30px;
+    position: fixed;
+    text-align: center;
+    transform: translate(-50%);
+    animation: enter 1s ease-in;
+
+    a {
+        margin: 0 30px;
+    }
+}
+
+#gradient {
+    z-index: 1;
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    pointer-events: none;
+    background: linear-gradient(to top, transparent, var(--bg));
+}
+
+#loader {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: center right;
+    background-color: var(--loader);
+}
+
+main {
+    top: 80vh;
+    padding: 8rem 20vw;
+    position: absolute;
+    background: var(--bg);
+
+    #arrow {
+        left: 50%;
+        cursor: pointer;
+        user-select: none;
+        position: absolute;
+        writing-mode: vertical-lr;
+        transform: rotate(90deg) translateX(-6rem);
+    }
+
+    h2 {
+        margin: 45px 0 5px;
+    }
+
+    li {
+        list-style: inside square;
+
+        i {
+            opacity: 0.5;
+        }
+    }
+
+    a {
+        font-weight: bold;
+    }
+
+    img {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    #cards {
+        gap: 2.5em;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 80px;
+
+        div {
+            border: none;
+            padding: 60px;
+            flex: 1 1 14rem;
+            cursor: pointer;
+            color: var(--fg);
+            filter: brightness(0.6);
+            transition: filter 0.5s ease-in-out, scale 0.25s ease-in-out;
+
+			border-radius: 10px;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+
+            &:hover {
+                scale: 1.04;
+                filter: brightness(1);
+            }
+
+            li {
+                opacity: 0.7;
+                list-style: none;
+
+                &:before {
+                    filter: var(--inv);
+                    margin-right: 1ch;
+                    display: inline-block;
+                    content: url('../../assets/icons/check.svg');
+                }
+            }
+        }
+    }
+}
+
+// Tooltip
+a[tooltip],
+div[tooltip] {
+    position: relative;
+    transition: color $theme-transition;
+
+    &:after {
+        top: 30px;
+        left: 50%;
+        opacity: 0;
+        font-size: 12px;
+        color: var(--fg);
+        position: absolute;
+        white-space: nowrap;
+        content: attr(tooltip);
+        transition: opacity 0.5s;
+        transform: translateX(-50%);
+    }
+
+    &:hover:after {
+        opacity: 1;
+    }
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(150, 150, 150, 0.3);
+
+    &:hover {
+        background: rgba(150, 150, 150, 0.6);
+    }
+}

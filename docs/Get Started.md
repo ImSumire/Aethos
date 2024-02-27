@@ -1,0 +1,2 @@
+Getting started in the Aethos modpack offers a thrilling journey filled with unique challenges and opportunities, thanks to the diverse range of mods included. Here's a guide to help you embark on your adventure !
+getstarted.html

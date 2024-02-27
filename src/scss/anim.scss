@@ -1,0 +1,25 @@
+.transition-main {
+    transition: {
+        duration: 0.5s;
+        property: opacity, transform;
+        timing-function: cubic-bezier(0.8, 0, 0.2, 1);
+    }
+
+    html.is-animating & {
+        opacity: 0;
+        transform: translateX(-1em);
+    }
+
+    html.is-leaving & {
+        transform: translateX(1em);
+    }
+
+    html.is-animating.to-left & {
+        opacity: 0;
+        transform: translateX(1em);
+    }
+
+    html.is-leaving.to-left & {
+        transform: translateX(-1em);
+    }
+}

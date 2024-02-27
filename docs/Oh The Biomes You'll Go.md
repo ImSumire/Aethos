@@ -1,0 +1,2 @@
+Oh The Biomes You'll Go is an exploration and adventure mod designed to take you on a road trip across Minecraft like no other! Explore over 80 magical, realistic, and breathtaking biomes.
+https://oh-the-biomes-youll-go.fandom.com/wiki/Oh_The_Biomes_You%27ll_Go_Wiki

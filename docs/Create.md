@@ -1,0 +1,2 @@
+Create is a mod offering a variety of tools and blocks for Building, Decoration and Aesthetic Automation. <br /><br />The added elements of tech are designed to leave as many design choices to the player as possible. With Create, the game isn't played inside a bunch of UIs, it challenges you to setup contraptions of animated components working together in many possible arrangements.
+https://create.fandom.com/wiki/Create_Mod_Wiki

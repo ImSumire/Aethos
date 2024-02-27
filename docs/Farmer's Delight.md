@@ -1,0 +1,2 @@
+Farmer's Delight is a mod that gently expands upon farming and cooking in Minecraft.<br /><br />Using a simple cooking system and a few familiar ingredients, you'll be able to prepare a wide variety of hearty meals: from sandwiches to salads and stews, from beautiful desserts to mouth-watering feasts, no ingredient will be left behind in your kitchen!
+https://farmersdelight.fandom.com/wiki/Farmer%27s_Delight_Wiki
