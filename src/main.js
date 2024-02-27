@@ -58,7 +58,7 @@ document.addEventListener("mousemove", e => {
 /* Search */
 var dialog, input, results;
 
-const data = fetch('https://raw.githubusercontent.com/ImSumire/Aethos/main/data.json').then(r => r.json());
+const data = fetch('http://127.0.0.1:3000/data.json').then(r => r.json());
 
 const limit = 8;
 
@@ -70,7 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function search(entry) {
     entry = entry.toLowerCase();
-    results.innerHTML = '';
+    const res = document.querySelector('#search dialog > section');
+    res.innerHTML = '';
     let count = 0;
 
     data.then(data => {
@@ -85,30 +86,23 @@ function search(entry) {
 
                 const result = document.createElement('a');
                 result.href = href;
-                // result.innerHTML = name;
                 if (name != 'Installation' && name != 'Get Started') result.target = '_blank';
-
-                // const result = document.createElement('div');
-                // result.classList = 'result';
 
                 const head = document.createElement('h2');
                 head.innerHTML = name
-                // link.href = href;
-                // link.innerHTML = name;
-                // if (name != 'Installation' && name != 'Get Started') link.target = '_blank';
                 result.appendChild(head);
 
                 const preview = document.createElement('p');
                 preview.innerHTML = descr;
                 result.appendChild(preview);
 
-                results.appendChild(result);
+                res.appendChild(result);
             }
         });
-        if (results.childElementCount === 0) {
+        if (res.childElementCount === 0) {
             const msg = document.createElement('p');
             msg.innerHTML = 'No result.';
-            results.appendChild(msg);
+            res.appendChild(msg);
         }
     });
 }
