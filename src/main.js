@@ -70,8 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function search(entry) {
     entry = entry.toLowerCase();
-    const res = document.querySelector('#search dialog > section');
-    res.innerHTML = '';
+    results.innerHTML = '';
     let count = 0;
 
     data.then(data => {
@@ -96,13 +95,13 @@ function search(entry) {
                 preview.innerHTML = descr;
                 result.appendChild(preview);
 
-                res.appendChild(result);
+                results.appendChild(result);
             }
         });
-        if (res.childElementCount === 0) {
+        if (results.childElementCount === 0) {
             const msg = document.createElement('p');
             msg.innerHTML = 'No result.';
-            res.appendChild(msg);
+            results.appendChild(msg);
         }
     });
 }
